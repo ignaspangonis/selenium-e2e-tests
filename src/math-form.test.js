@@ -1,6 +1,8 @@
-import { By, Builder, Key } from 'selenium-webdriver'
+import { By, Builder } from 'selenium-webdriver'
 import { describe, before, after, it } from 'mocha'
 import assert from 'assert'
+
+// TODO mock API calls
 
 describe('suninjuly.github.io/alert_accept.html', () => {
   let driver
