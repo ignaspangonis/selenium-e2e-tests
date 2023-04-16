@@ -92,7 +92,7 @@ describe('selenium.dev/selenium/web/web-form.html', () => {
     assert.equal('Received!', value)
   })
 
-  it('checks a checkbox', async () => {
+  it('checks and unchecks a checkbox', async () => {
     const checkbox = await driver.findElement(By.css("input[type='checkbox']:first-of-type"))
 
     assert.equal(true, await checkbox.isSelected())
