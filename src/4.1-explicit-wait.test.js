@@ -13,8 +13,6 @@ describe('suninjuly.github.io/explicit_wait2.html', () => {
   after(async () => await driver.quit())
 
   beforeEach(async () => {
-    await driver.manage().deleteAllCookies()
-
     await driver.get(TEST_URL)
   })
 

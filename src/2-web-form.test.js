@@ -13,8 +13,6 @@ describe('selenium.dev/selenium/web/web-form.html', () => {
   after(async () => await driver.quit())
 
   beforeEach(async () => {
-    await driver.manage().deleteAllCookies()
-
     await driver.get(TEST_URL)
   })
 

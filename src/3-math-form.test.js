@@ -15,8 +15,6 @@ describe('suninjuly.github.io/alert_accept.html', () => {
   after(async () => await driver.quit())
 
   beforeEach(async () => {
-    await driver.manage().deleteAllCookies()
-
     await driver.get(TEST_URL)
   })
 
