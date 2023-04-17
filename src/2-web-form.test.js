@@ -1,20 +1,17 @@
 import { By, Builder, Key } from 'selenium-webdriver'
-import { describe, before, after, it } from 'mocha'
+import { describe, it } from 'mocha'
 import assert from 'assert'
 
 describe('selenium.dev/selenium/web/web-form.html', () => {
   let driver
   const TEST_URL = 'https://www.selenium.dev/selenium/web/web-form.html'
 
-  before(async () => {
-    driver = await new Builder().forBrowser('chrome').build()
-  })
-
-  after(async () => await driver.quit())
-
   beforeEach(async () => {
+    driver = await new Builder().forBrowser('chrome').build()
     await driver.get(TEST_URL)
   })
+
+  afterEach(async () => await driver.quit())
 
   it('loads the page', async () => {
     const title = await driver.getTitle()

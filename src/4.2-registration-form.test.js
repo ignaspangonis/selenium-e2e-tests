@@ -6,15 +6,12 @@ describe('suninjuly.github.io/registration1.html', () => {
   let driver
   const TEST_URL = 'http://suninjuly.github.io/registration1.html'
 
-  before(async () => {
-    driver = await new Builder().forBrowser('chrome').build()
-  })
-
-  after(async () => await driver.quit())
-
   beforeEach(async () => {
+    driver = await new Builder().forBrowser('chrome').build()
     await driver.get(TEST_URL)
   })
+
+  afterEach(async () => await driver.quit())
 
   it('fills and submits the form', async () => {
     const firstNameInput = await driver.findElement(By.className('first'))
@@ -43,15 +40,12 @@ describe('suninjuly.github.io/registration2.html', () => {
   let driver
   const TEST_URL = 'http://suninjuly.github.io/registration2.html'
 
-  before(async () => {
-    driver = await new Builder().forBrowser('chrome').build()
-  })
-
-  after(async () => await driver.quit())
-
   beforeEach(async () => {
+    driver = await new Builder().forBrowser('chrome').build()
     await driver.get(TEST_URL)
   })
+
+  afterEach(async () => await driver.quit())
 
   // This test should fail
   it.skip('fills and submits the form', async () => {

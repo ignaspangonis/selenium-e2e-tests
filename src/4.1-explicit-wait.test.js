@@ -6,15 +6,12 @@ describe('suninjuly.github.io/explicit_wait2.html', () => {
   let driver
   const TEST_URL = 'http://suninjuly.github.io/explicit_wait2.html'
 
-  before(async () => {
-    driver = await new Builder().forBrowser('chrome').build()
-  })
-
-  after(async () => await driver.quit())
-
   beforeEach(async () => {
+    driver = await new Builder().forBrowser('chrome').build()
     await driver.get(TEST_URL)
   })
+
+  afterEach(async () => await driver.quit())
 
   it('loads the page', async () => {
     const title = await driver.getTitle()

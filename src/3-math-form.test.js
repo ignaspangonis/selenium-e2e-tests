@@ -8,15 +8,12 @@ describe('suninjuly.github.io/alert_accept.html', () => {
   let driver
   const TEST_URL = 'http://suninjuly.github.io/alert_accept.html'
 
-  before(async () => {
-    driver = await new Builder().forBrowser('chrome').build()
-  })
-
-  after(async () => await driver.quit())
-
   beforeEach(async () => {
+    driver = await new Builder().forBrowser('chrome').build()
     await driver.get(TEST_URL)
   })
+
+  afterEach(async () => await driver.quit())
 
   it('loads the page', async () => {
     const title = await driver.getTitle()
@@ -53,17 +50,12 @@ describe('suninjuly.github.io/redirect_accept.html', () => {
   let driver
   const TEST_URL = 'http://suninjuly.github.io/redirect_accept.html'
 
-  before(async () => {
-    driver = await new Builder().forBrowser('chrome').build()
-  })
-
-  after(async () => await driver.quit())
-
   beforeEach(async () => {
-    await driver.manage().deleteAllCookies()
-
+    driver = await new Builder().forBrowser('chrome').build()
     await driver.get(TEST_URL)
   })
+
+  afterEach(async () => await driver.quit())
 
   it('loads the page', async () => {
     const title = await driver.getTitle()
