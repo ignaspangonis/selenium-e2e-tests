@@ -22,7 +22,10 @@ describe('suninjuly.github.io/registration1.html', () => {
     const emailInput = await driver.findElement(By.className('third'))
     const submitButton = await driver.findElement(By.className('btn'))
 
+    assert.ok(await firstNameInput.isDisplayed())
     assert.ok(await lastNameInput.isDisplayed())
+    assert.ok(await emailInput.isDisplayed())
+    assert.ok(await submitButton.isDisplayed())
 
     await firstNameInput.sendKeys('First name')
     await lastNameInput.sendKeys('Last name')
@@ -50,15 +53,18 @@ describe('suninjuly.github.io/registration2.html', () => {
     await driver.get(TEST_URL)
   })
 
-  // Desirable behavior - this test should fail
+  // This test should fail
   it.skip('fills and submits the form', async () => {
     const firstNameInput = await driver.findElement(By.className('first'))
     const lastNameInput = await driver.findElement(By.css('.first_block .second'))
     const emailInput = await driver.findElement(By.className('third'))
     const submitButton = await driver.findElement(By.className('btn'))
 
-    // This assertion should fail, because the last name input is not displayed
+    assert.ok(await firstNameInput.isDisplayed())
+    // Below assertion fails, because the last name input is not displayed
     assert.ok(await lastNameInput.isDisplayed())
+    assert.ok(await emailInput.isDisplayed())
+    assert.ok(await submitButton.isDisplayed())
 
     await firstNameInput.sendKeys('First name')
     await lastNameInput.sendKeys('Last name')
