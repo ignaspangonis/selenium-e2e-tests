@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --no-timeouts ./src/**/*test.js",
-    "test:watch": "mocha --no-timeouts --watch --watch-files ./src/**/*test.js",
+    "test:match": "mocha --no-timeouts -- ",
+    "test:watch": "mocha --no-timeouts --watch ./src/**/*test.js --parallel",
     "start": "nodemon index.js"
   },
   "type": "module",
