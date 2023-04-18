@@ -8,7 +8,7 @@ A repo for myself to learn E2E testing with Selenium.
 This installs necessary JS dependencies.
 
 ### Set up environment
-Read [Selenium docs](https://www.selenium.dev/documentation/webdriver/getting_started/) to set it up. Most importantly, you need a Chrome driver. Locally, I have it in the directory as `chromedriver` (that's why it's in the `.gitignore`).
+Read [Selenium docs](https://www.selenium.dev/documentation/webdriver/getting_started/) to set it up. Most importantly, you need a Chrome driver. Locally, I have it in the local directory as `chromedriver` (that's why it's in the `.gitignore`).
 
 ## Avalable commands
 
@@ -22,7 +22,7 @@ Runs tests and watches them, i. e. listens for file changes, that trigger the te
 
 ### `npm run test:match {filename}`
 
-This runs the tests that match the filename. For example, `npm run test:specify "src/4.1-explicit-wait.test.js"`
+This runs the tests that match the filename. For example, `npm run test:match "src/4.1-explicit-wait.test.js"`
 
 ## Notes
 
