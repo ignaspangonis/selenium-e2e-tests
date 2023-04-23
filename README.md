@@ -8,7 +8,10 @@ A repo for myself to learn E2E testing with Selenium.
 This installs necessary JS dependencies.
 
 ### Set up environment
-Read [Selenium docs](https://www.selenium.dev/documentation/webdriver/getting_started/) to set it up. Most importantly, you need a Chrome driver. Locally, I have it in the local directory as `chromedriver` (that's why it's in the `.gitignore`).
+
+You need a Chrome driver to run tests. On macOS, you can install it with `brew install --cask chromedriver`.
+
+Read more in the [Selenium documentation](https://www.selenium.dev/documentation/webdriver/getting_started/).
 
 ## Avalable commands
 
