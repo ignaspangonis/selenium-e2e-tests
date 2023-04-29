@@ -5,7 +5,7 @@ A repo for myself to learn E2E testing with Selenium.
 ## Prerequisites
 
 ### Run `npm install`
-This installs necessary JS dependencies.
+This installs necessary JS dependencies in the local directory.
 
 ### Set up environment
 
