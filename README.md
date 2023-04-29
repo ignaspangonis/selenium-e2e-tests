@@ -9,7 +9,7 @@ This installs necessary JS dependencies.
 
 ### Set up environment
 
-You need a Chrome driver to run tests. On macOS, you can install it with `brew install --cask chromedriver`.
+You need a Chrome driver to run tests. On macOS, you can install it globally with `brew install --cask chromedriver`.
 
 Read more in the [Selenium documentation](https://www.selenium.dev/documentation/webdriver/getting_started/).
 
