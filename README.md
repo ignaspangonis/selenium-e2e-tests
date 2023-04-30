@@ -13,7 +13,7 @@ You need a Chrome driver to run tests. On macOS, you can install it globally wit
 
 Read more in the [Selenium documentation](https://www.selenium.dev/documentation/webdriver/getting_started/).
 
-## Avalable commands
+## Available commands
 
 ### `npm test`
 
