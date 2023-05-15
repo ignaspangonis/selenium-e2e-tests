@@ -1,5 +1,4 @@
 import { By, Builder } from 'selenium-webdriver'
-import { describe, before, after, it } from 'mocha'
 import assert from 'assert'
 
 // TODO mock API calls

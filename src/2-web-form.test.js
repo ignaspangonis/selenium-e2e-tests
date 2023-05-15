@@ -1,5 +1,4 @@
 import { By, Builder, Key } from 'selenium-webdriver'
-import { describe, it } from 'mocha'
 import assert from 'assert'
 
 describe('selenium.dev/selenium/web/web-form.html', () => {

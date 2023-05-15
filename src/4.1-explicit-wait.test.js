@@ -1,5 +1,4 @@
 import { By, Builder, until } from 'selenium-webdriver'
-import { describe, before, after, it } from 'mocha'
 import assert from 'assert'
 
 describe('suninjuly.github.io/explicit_wait2.html', () => {
