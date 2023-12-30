@@ -1,8 +1,6 @@
 import { By, Builder } from 'selenium-webdriver'
 import assert from 'assert'
 
-// TODO mock API calls
-
 describe('suninjuly.github.io/alert_accept.html', () => {
   let driver
   const TEST_URL = 'http://suninjuly.github.io/alert_accept.html'
